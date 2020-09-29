@@ -1,0 +1,2 @@
+rootProject.name='StreamerClientV2'
+include ':app', ':joystickView', ':android_streaming_client'

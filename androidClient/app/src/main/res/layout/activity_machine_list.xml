@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient"
+    tools:context=".MachineListActivity">
+
+
+<!--    <EditText-->
+<!--        android:id="@+id/machine_ip"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="99dp"-->
+<!--        android:layout_marginTop="55dp"-->
+<!--        android:layout_marginEnd="99dp"-->
+<!--        android:layout_marginBottom="23dp"-->
+<!--        android:layout_weight="1"-->
+<!--        android:ems="10"-->
+<!--        android:inputType="textPersonName"-->
+<!--        android:text=""-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/save_machine"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/save_machine"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="161dp"-->
+<!--        android:layout_marginTop="23dp"-->
+<!--        android:layout_marginEnd="162dp"-->
+<!--        android:layout_marginBottom="560dp"-->
+<!--        android:layout_weight="1"-->
+<!--        android:text="Add machine"-->
+
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/machine_ip" />-->
+
+    <ListView
+        android:id="@+id/machine_list"
+        android:layout_width="410dp"
+        android:layout_height="203dp"
+        android:layout_marginTop="94dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="99dp"
+        android:background="?android:attr/activatedBackgroundIndicator"
+        android:choiceMode="singleChoice"
+        android:divider="@null"
+        android:dividerHeight="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/app_list"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ListView>
+
+    <ListView
+        android:id="@+id/app_list"
+        android:layout_width="409dp"
+        android:layout_height="313dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/machine_list"
+        app:layout_constraintVertical_bias="0.822">
+
+    </ListView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
